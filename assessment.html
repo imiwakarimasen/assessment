@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assessment.css">
+    <title>あなたのいいところ</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>絶対に褒めてくれる診断結果</h1>
+    <p>名前を入れてね！</p>
+    <input type="text" id="user-name" size="40" maxlength="20">
+    <button id="assessment">診断する</button> 
+    <div id="result-area"></div>
+    <div id="tweet-area"></div>
+    <img src="job_uranaishi.png" alt="uranaisi">
+    <Marquee behavior="alternate">
+        <img src="job_uranaishi.png" width="90">
+        </Marquee>
+        
+
+    <script src="assessment.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // ボタンをクリックしたときの処理
+            $("#assessment").on("click", function() {
+                // 効果音を再生するためのオーディオ要素を作成
+                var audio = new Audio('onngaku.mp3');
+                // 効果音を再生
+                audio.play();
+            });
+        });
+    </script>
+</body>
+</html>
